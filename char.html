@@ -1,0 +1,27 @@
+<html>
+<body>
+<form>
+input string:
+<input type="text" id="r1"><br>
+input char:
+<input type="text" id="r2"><br>
+<input type="button" value="check" onclick="char()">
+</form>
+</body>
+</html>
+<script>
+function char()
+{
+var cnt=0;
+var s1=document.getElementById("r1").value;
+var char=document.getElementById("r2").value;
+for(i=0;i<s1.length;i++)
+{
+if(s1.charAt(i)==char)
+cnt++;
+}
+document.write("charcter="+cnt);
+}
+</script>
+
+

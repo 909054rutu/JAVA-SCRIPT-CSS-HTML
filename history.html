@@ -1,0 +1,23 @@
+<html>
+<body>
+<form>
+<input type="button" value="forward" onclick="fun1()"><br>
+<input type="button" value="back" onclick="fun2()"><br>
+<input type="button" value="go"-2 onclick="fun3()"><br>
+</form>
+</body>
+</html>
+<script>
+function fun1()
+{
+history.forward();
+}
+function fun2()
+{
+history.back();
+}
+function fun3()
+{
+history.go(-2);
+}
+</script>

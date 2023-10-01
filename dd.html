@@ -1,0 +1,26 @@
+<html>
+<body>
+<form>
+enter user name:
+<input type="text" id="r1"><br>
+<input type="button" value="ok" onclick="show()">
+</form>
+</body>
+</html>
+<script>
+function show()
+{
+var n=document.getElementById("r1").value;
+var d1=new Date();
+document.write("Date and time="+d1);
+var h=d1.getHours();
+if(h>=5 &&h<12)
+document.write("<br> Good morning......"+n);
+else if(h>=12&&h<=18)
+document.write("<br> Good Afternoon......"+n);
+else if(h>=18&&h<=21)
+document.write("<br> Good Evening......"+n);
+else
+document.write("<br> Good night..."+n);
+}
+</script> 

@@ -1,0 +1,24 @@
+<html>
+<body>
+<form>
+enter charcter:
+<input type="text" id="r1"><br>
+enter number:
+<input type="number" id="r2"><br>
+<input type="button" value="ok" onclick="ok()">
+</form>
+</body>
+</html>
+<script>
+function ok()
+{
+var s1=document.getElementById("r1").value;
+var p=document.getElementById("r2").value;
+p=parseInt(p);
+for(i=0;i<=s1.length;i++)
+{
+var char=s1.charAt(p);
+}
+document.write("aa="+char);
+}
+</script>

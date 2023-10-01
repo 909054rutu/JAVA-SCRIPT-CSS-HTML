@@ -1,0 +1,25 @@
+<html>
+<body>
+<form>
+Enter string:
+<input type="text"  id="r1"><br>
+enter charcter:
+<input type="text" id="r2"><br>
+<input type="button" value="cnt" onclick="count()">
+</form>
+</body>
+</html>
+<script>
+function count()
+{
+var cnt=0;
+var s1=document.getElementById("r1").value;
+var ch=document.getElementById("r2").value;
+for(i=0;i<s1.length;i++)
+{
+if(s1.charAt(i)==ch)
+cnt++;
+}
+document.write("count="+cnt);
+}
+</script>

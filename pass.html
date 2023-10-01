@@ -1,0 +1,22 @@
+<html>
+<body>
+<form>
+Enter username:
+<input type="text" id="r1"><br>
+Enter password:
+<input type="password" id="r2"><br>
+<input type="button" value="login" onclick="validate()">
+</form>
+</body>
+</html>
+<script language="javascript">
+function validate()
+{
+var u=document.getElementById("r1").value;
+var p=document.getElementById("r2").value;
+if(u=="iphone" && p=="101")
+alert("login succesfully");
+else
+alert("invalid user or password");
+}
+</script>

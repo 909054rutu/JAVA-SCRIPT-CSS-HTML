@@ -1,0 +1,26 @@
+<html>
+<body>
+<form>
+enter n:
+<input type="number" id="r1"><br>
+<input type="button" value="ok" onclick="show()">
+</form>
+</body>
+</html>
+<script>
+function show()
+{
+var n=document.getElementById("r1").value;
+var n=parseInt(n);
+var ch=65;
+for(i=1;i<=n;i++)
+{
+for(j=1;i<=i;j++)
+{
+document.write(String.fromCharCode(ch));
+ch++;
+}
+document.write("<br>");
+}
+}
+</script>

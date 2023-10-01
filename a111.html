@@ -1,0 +1,65 @@
+<html>
+<head>
+<title> sop1<title/>
+<script language ="javascript">
+function f1()
+{
+document.bgColor="red";
+window.setTimeout("f2()",1200);
+
+}
+function f2()
+
+{document.bgColor="yellow";
+window.setTimeout("f3()",1200);
+
+}
+
+function f3()
+
+{document.bgColor="green";
+window.setTimeout("f4()",1200);
+
+}
+
+function f4()
+
+{
+document.bgColor="orange";
+window.setTimeout("f5()",1200);
+
+}
+
+fuction f5()
+
+{
+document.bgColor="blue";
+window.setTimeout("f6()",1200);
+
+}
+
+function f6()
+
+{
+document.bgColor="gray"
+window.setTimeout("f7()",1200);
+
+}
+
+function f7()
+
+{
+document.bgColor="pink";
+window.setTimeout("f1()",1200);
+
+}
+<body>
+<form name="form1">
+<input type="button" value="color" onMouseover="f1()">
+</form>
+</head>
+</html>
+
+
+
+

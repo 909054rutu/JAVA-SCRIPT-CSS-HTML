@@ -1,0 +1,28 @@
+<html>
+<body>
+<form>
+enter string:
+<input type="text"  id="r1"><br>
+<input type="button" value="caluclatevowel" onclick="vowel()">
+</html>
+</body>
+</form>
+<script>
+function vowel()
+{
+var cont=0;
+var s1=document.getElementById("r1").value;
+for(i=0; i<s1.lenght; i++)
+{
+if(s1.charAt(i)=='A'||s1.charAt(i)=='a'||s1.charAt(i)=='E'||s1.charAt(i)=='I'||s1.charAt(i)=='O'||s1.charAt(i)=='o'||
+s1.charAt(i)=='U'||s1.charAt(i)=='u')
+
+
+cont++;
+}
+document.write("vowel cnt="+cont);
+}
+</script>
+
+
+

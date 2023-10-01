@@ -1,0 +1,24 @@
+<html>
+<body>
+<form>
+input limit:
+<input type="number" id="r1"><br>
+<input type="button" value="display" onclick="star()">
+</form>
+</body>
+</html>
+<script>
+function star()
+{
+var n=document.getElementById("r1").value;
+n=parseInt(n);
+for(i=1;i<=n;i++)
+{
+for(j=1;j<=i;j++)
+{
+document.write("i");
+}
+document.write("<br>");
+}
+}
+</script>

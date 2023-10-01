@@ -1,0 +1,43 @@
+<html>
+<body>
+<form>
+input name:
+<input type="text" id="r1"><br>
+input address:
+<input type="text" id="r2"><br>
+input city:
+<input type="text" id="r3"><br>
+input pin code:
+<input type="number" id="r4"><br>
+<input type="button" value="check" onclick="disp()">
+
+</form>
+</body>
+</html>
+<script>
+function disp()
+{
+var s1=document.getElementById("r1").value;
+var s2=document.getElementById("r2").value;
+var s3=document.getElementById("r3").value;
+var s4=document.getElementById("r4").value;
+falg=0;
+if(s1.length==0)
+{
+alert("name is empty");
+flag=1;
+}
+if(s4.length!=6)
+{
+alert("invaild pincode");
+falg=1;
+}
+if(flag==0)
+{
+document.write("name="+s1);
+document.write("<br>address="+s2);
+document.write("<br>city="+s3);
+document.write("<br>pincode="+s4);
+}
+}
+</script>

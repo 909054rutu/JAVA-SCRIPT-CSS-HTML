@@ -1,0 +1,28 @@
+<html>
+<body>
+<form>
+Enter number:
+<input type="number" id="r1"><br>
+<input type="button" value="ok"onclick="armstrong()"><br>
+</form>
+</body>
+</html>
+<script>
+function armstrong()
+{
+var n=document.getElementById("r1").value;
+n=parseInt(n);
+var s=0;
+var n1=n;
+while(n>0)
+{
+d=n%10;
+n=parseInt(n/10);
+s=s+d*d*d;
+}
+if(s==n1)
+document.write("number is armstrong");
+else
+document.write("number is not armstrong");
+}
+</script>

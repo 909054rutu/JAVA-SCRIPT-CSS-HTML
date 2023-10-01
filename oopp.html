@@ -1,0 +1,32 @@
+<html>
+<body>
+<form>
+Radius:
+<input type="number" id="r1"><br>
+Radius:
+<input type="number" id="r2"><br>
+Radius:
+<input type="number" id="r3"><br>
+<input type="button" value="ok" onclick="ok()">
+</form>
+</body>
+</html>
+<script>
+function ok()
+{
+var n1=document.getElementById("r1").value;
+var n2=document.getElementById("r2").value;
+var n3=document.getElementById("r3").value;
+var n1=parseInt(n1);
+var n2=parseInt(n2);
+var n3=parseInt(n3);
+{
+if(n1>n2&&n1>n3)
+alert("n1 motha");
+else if(n2>n1&&n2>n2)
+alert("n2 motha");
+else
+alert("n3 motha");
+}
+}
+</script>
